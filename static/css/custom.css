@@ -1,0 +1,43 @@
+body{
+    font-family: 'Lato', SansSerif;
+}
+
+.btn-info{
+    color: #85bfea;
+}
+
+.navbar-inverse{
+    font-weight: bolder;
+}
+
+#contact{
+    padding: 30px 0;
+}
+
+#contact h2{
+    padding: 10px;
+}
+#contact i{
+    color: #85bfea;
+
+}
+
+#forum a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+#thread-item a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.thread-btns, #new-thread {
+    padding: 10px;
+}
+
+#login i{
+    font-size: 30px;
+    color:#85bfea;
+    padding: 10px;
