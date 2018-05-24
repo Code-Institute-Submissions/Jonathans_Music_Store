@@ -35,8 +35,32 @@
 		</div>
 	</section>
                 </div>
-            </div>
-{% endblock %}           
+            </div>           
         </div>
     </div>
 </div>
+<div class="row" id="googleMap">
+
+</div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0CEfCKnjQ1iKBJAK2BF2DaeddV0_hNLc"></script>
+
+    <script>
+    var myCenter = new google.maps.LatLng(53.294259, -6.133573);
+    function initialize() {
+        var mapProp = {
+            center:myCenter,
+            zoom:13,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({
+            position:myCenter
+        });
+        marker.setMap(map);}
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+{% endblock %}

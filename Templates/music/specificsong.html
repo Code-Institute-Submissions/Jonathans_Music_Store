@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="singlesong">
+        <p>Name: {{ song }}</p>
+    <p>Artist: <a href="/artists/{{ song.artist }}/">{{ song.artist }}</a></p>
+    <p>Album: <a href="/albums/{{ song.album }}/">{{ song.album }}</a></p>
+    <p><audio controls="controls">
+        <source src="{{ song.audio_track.url }}" type="audio/mpeg" />
+    </audio>
+</div>
+{% endblock %}
